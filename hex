@@ -1,0 +1,12 @@
+{{/*
+	Trigger Type: Command
+	Trigger: hex
+	
+	5crownik007
+*/}}
+
+{{$args := parseArgs 1 "Please pass a decimal integer." (carg "int" "decimal")}}
+{{if (kindOf ($args.Get 0)) = int}}
+	In hexadecimal, you sent {{$args.Get 0}}
+{{else}}
+	Please pass a decimal integer.
