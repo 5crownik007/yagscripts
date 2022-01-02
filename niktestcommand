@@ -1,1 +1,8 @@
-Welcome to the Bot Testing research facility. You are {{.User}}
+{{/*
+	Trigger Type: Command
+	Trigger: niktestcommand
+	
+	5crownik007
+*/}}
+
+Welcome to the Bot Testing research facility. You are <@{{.User.ID}}>. The time is <t:{{currentTime.Unix}}:t> <:WorldShowcase:742114117862817842>.
